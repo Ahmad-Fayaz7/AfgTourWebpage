@@ -1,0 +1,62 @@
+<template>
+  <nav class="navbar">
+    <div class="container">
+      <img src="../assets/logo.png" class="logo" alt="" />
+      <ul>
+        <li><a href="#" class="current">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</template>
+<style>
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navbar {
+  position: fixed;
+  background-color: #264653;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  transition: all 0.3s ease-in-out;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+.navbar a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar.active {
+  background-color: #fff;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.3);
+}
+.navbar.active a {
+  color: #000;
+}
+.navbar.active .container {
+  padding: 10px 0;
+}
+.navbar a.current,
+.navbar a:hover {
+  color: #e76f51;
+  font-weight: bold;
+}
+</style>
