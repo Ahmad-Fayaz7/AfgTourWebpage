@@ -43,6 +43,9 @@ export default {};
   max-width: 1200px;
   margin: 0 auto;
 }
+.destination {
+  margin: auto;
+}
 .hero {
   background-image: url(../assets/bandi-amir2.jpg);
   background-repeat: no-repeat;
@@ -68,7 +71,7 @@ export default {};
   background-color: rgba(38, 70, 83, 0.3);
   z-index: -1;
 }
-.hero h1 {
+.hero #hero-txt {
   font-size: 46px;
   margin: -20px 0 20px;
 }
@@ -87,21 +90,38 @@ export default {};
   color: #264653;
 }
 .destination {
+  width: 100%;
+  height: auto;
   text-decoration: none;
   color: #fff;
   font-size: 24px;
   font-weight: bold;
+  max-width: calc((100% / 3) - 20px);
+  margin: 10px 10px;
+
+  height: 240px;
+  position: relative;
+}
+@media all and (max-width: 560px) {
+  .destination {
+    max-width: 100%;
+  }
 }
 
 .destination img {
+  width: 100%;
   height: 240px;
-  width: 370px;
-  margin: 10px 10px;
+  min-height: 240px;
   border-radius: 10px;
-  display: flex;
+  object-fit: cover;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.destination img:hover {
+  transform: scale(1.05);
 }
 .province {
-  position: relative;
+  position: absolute;
   left: 50px;
   bottom: 50px;
 }

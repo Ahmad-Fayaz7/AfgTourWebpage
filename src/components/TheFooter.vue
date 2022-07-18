@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <div class="footer-section">
     <div class="footer-container container">
       <div class="footer-item" id="first-item">
         <img src="../assets/logo.png" alt="logo" />
@@ -34,10 +34,19 @@
         <img src="../assets/youtube-logo.png" alt="" />
       </div>
     </div>
-  </footer>
+  </div>
 </template>
 <style>
-footer {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poppins&family=Roboto:ital,wght@0,500;1,500&display=swap");
+@media all and (max-width: 500px) {
+  .footer-item:nth-child(3) {
+    display: none;
+  }
+  .footer-container {
+    width: 100%;
+  }
+}
+div .footer-section {
   background-color: #264653;
   color: #fff;
   height: 350px;
@@ -49,11 +58,20 @@ footer {
   padding-top: 50px;
 }
 .footer-item {
-  width: 300px;
-  padding: 0 50px;
+  /* margin-left: 25px; */
+  /* padding: 0 20px; */
+  flex: 1;
 }
+
 #first-item {
+  /* flex-grow: 2; */
+  width: 150px;
+}
+
+#first-item.footer-item p {
+  font-family: "Montserrat", sans-serif;
   text-align: left;
+  /* max-width: 200px; */
 }
 .footer-item a {
   text-decoration: none;
@@ -67,7 +85,7 @@ footer {
   padding-bottom: 5px;
 }
 #icon img {
-  width: 40px;
+  width: 30px;
   padding: 5px;
 }
 </style>

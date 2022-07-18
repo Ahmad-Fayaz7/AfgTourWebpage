@@ -6,6 +6,7 @@ import PanjshirTour from "../pages/PanjshirTour.vue";
 import KabulTour from "../pages/KabulTour.vue";
 import HeratTour from "../pages/HeratTour.vue";
 import MazarTour from "../pages/MazarTour.vue";
+import ContactForm from "../pages/ContactForm.vue";
 const routes = [
   {
     path: "/",
@@ -35,6 +36,10 @@ const routes = [
   {
     path: "/MazarTour.vue",
     component: MazarTour,
+  },
+  {
+    path: "/ContactForm.vue",
+    component: ContactForm,
   },
 ];
 

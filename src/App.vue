@@ -1,7 +1,6 @@
 <template>
   <router-view />
   <the-header> </the-header>
-
   <the-footer> </the-footer>
 </template>
 
@@ -22,6 +21,7 @@ export default {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* background: rgba(0, 100, 0, 0.1); */
 }
 html {
   font-family: "Roboto", sans-serif;
